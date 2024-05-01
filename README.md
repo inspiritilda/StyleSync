@@ -22,6 +22,9 @@
 
 - Personal Fashion Tracking App, takes in closet items and allows virtual try on of clothing.
 
+**_Dashboard_**:
+https://trello.com/b/1mUNLyaH/stylesync-group-11-acit-2911-agile
+
 ---
 
 ## Meeting Minutes
