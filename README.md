@@ -75,19 +75,15 @@ Worked on:
 - Matilda:
     - Team Charter
     - Proposal Draft
-- Misha
+- Misha:
     - Proposal Draft
     - User Stories (On Trello)
 - Charley:
     - Stand-up Documentation
     - Status Report
     - Scrum TaskBoard (On Trello)
-
-- Angad
-    - Functionalities
-
-- Misha is working on the User Stories
-- Angad is working on tags
+- Angad:
+    - Functionalities (Tags)
 
 **_Next steps_**:
 - All team members: Weekly Peer Evaluation
