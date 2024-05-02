@@ -3,5 +3,5 @@
 ### Contains:
 - Team Charter
 - Status Report Folder
-- PowerPoint Folder
+- Presentation Folder
 - Proposal
