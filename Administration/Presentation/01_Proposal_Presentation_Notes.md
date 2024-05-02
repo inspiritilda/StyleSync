@@ -14,11 +14,36 @@ In your presentation (15 - 20 minutes), you have to include the following sectio
 
 ### 2. What does your application do?
 
+-   Wardrobe Management & Virtual Stylist
+
 ### 3. What specific problem does your application help your users solve?
+
+Simply upload photos of your clothes, set preferences, and let advanced algorithms curate personalized outfit recommendations for any occasion. Save time, enhance style, and promote sustainability with effortless wardrobe management.
+
+-   Reduces Decision Fatigue (Uses for Indecisive PEOPLE)
+-   Fixes the under Utilization of Wardrobe
+-   Aids in users Lack of style confidence
+-   Reduces time wasted trying on clothing
+-   Combats throw-away culture (Cause of Fast Fashion)
 
 ### 4. Who is the target market?
 
+Users:
+
+-   People who needs assistance with their fashion style clothes
+-   Fashion Focused Individual (Fashion Freaks)
+-   People Who want to save time
+-   Users who increase the utilization of their wardrobe
+-   People who wants to save money, or has a tight budget
+    -   Fashion without the $$$
+
 ### 5. How is your web app different from any similar, existing apps?
+
+-   Log in Capability
+    -   sync of application
+    -   sharing of different outfits
+-   User Input Wardrobe
+-   User Interface is minimalistic
 
 **_Competition to Our App:_**
 
@@ -49,6 +74,22 @@ In your presentation (15 - 20 minutes), you have to include the following sectio
 
 ### 6. Your minimum viable product (MVP)
 
+Sprint #0: (Administrative Work and Project Topic/Design)
+
+-   Project Proposal
+-   Team Charter
+
+Sprint #1:
+
+-   Log-in Page
+    -   Working Database of Accounts
+    -   Sign Up Page (Registration)
+-   Basic HomePage Layout
+    -   Navigation Bar
+    -   Item Boxes
+-   Creating Database & Syncing it
+    -   Table of inventory w/ categories
+
 ```md
 To find MVP:
 
@@ -69,26 +110,53 @@ To find MVP:
 -   Iterate and Expand: Continuously improve and expand the product based on user needs and insights.
 ```
 
-### 7. Provide a breakdown of each member's responsibilities. For your scrum team, who will take minutes, will you rotate role, who will manage version control merge conflicts? who will work on code? who will write unit tests? who will test the app?
+### 7. Provide a breakdown of each member's responsibilities. For your scrum team, who will take minutes, will you rotate role, who will manage version control merge conflicts? Who will work on code? Who will write unit tests? Who will test the app?
 
-| Member                 | Role(s)                                                                                |
-| ---------------------- | -------------------------------------------------------------------------------------- |
-| Angad Bains            | - Back-End Developer (Database)<br>- Front-End Developer                               |
-| Tanish Bansal          | - Coding Lead<br>- Back-End Developer<br>- Middleware Developer                        |
-| Matthew Chow           | - Front End Designer (User Interface)                                                  |
-| Chae Won (Matilda) Kim | - Secretary<br>- Product Owner (Week 1)<br>- Administrative Work                       |
-| Charley Liao           | - Group Leader<br>- Version Control<br>-Scrum Master (Week 1)<br>- Administrative Work |
-| Misha Makaroff         | - Version Control<br>- Front-End Designer (User Interface)                             |
+| Member                 | Role(s)                                                                                                                            |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Angad Bains            | - Back-End Developer (Database)<br>- Front-End Developer                                                                           |
+| Tanish Bansal          | - Coding Lead<br>- Back-End Developer<br>- Middleware Developer                                                                    |
+| Matthew Chow           | - Front End Designer (User Interface)<br>- Design the unit testing & app Tests                                                     |
+| Chae Won (Matilda) Kim | - Secretary<br>- Product Owner (Week 1)<br>- Administrative Work<br>- Middleware Developer                                         |
+| Charley Liao           | - Group Leader<br>- Version Control<br>- Scrum Master (Week 1)<br>- Administrative Work<br>- Design the Unit Testing and App Tests |
+| Misha Makaroff         | - Version Control<br>- Front-End Designer (User Interface)                                                                         |
 
 Our team will rotate the Scrum Master and Product Owner roles on a weekly basis.
 
 ### 8. List technologies you will use?
 
--   VSCode (HTML, CSS, JS)
+-   VSCode (HTML, CSS, Python, Jinja, SQLite, BootStrap)
 -   GitHub
 -   Google Docs
 -   Discord
 -   Trello
 -   Office 365 Suite
+-   Figma
 
 ### 9. Project Planning: (Deliverable 1 Specification and Review)
+
+Sprint #0: Project Proposal
+
+Review:
+
+-   Developed few Mock-ups (Topics)
+    -   Discussed Topics, Problem and Solution
+-   Determine Tools Used
+    -   Technical Tools
+-   Basic Functionality
+-   Administrative work
+    -   Team Charter
+    -   Status Update
+    -   Project Proposal
+
+Retro:
+
+- What went well in the sprint
+    - Organization, Regular Meetings, Participation
+- Processes
+    - Simply designed and discussed among team members, outlining each individuals Roles and Responsibilities through their strengths and weaknesses
+- What can be improved
+    - Group Cohesion, Communication, Will improve over time
+    - BOOK ROOMS IN ADVANCE
+- What can be made to improve in the next sprint
+    - Coding practice and understanding, research
