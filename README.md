@@ -37,7 +37,7 @@ https://trello.com/b/1mUNLyaH/stylesync-group-11-acit-2911-agile
 
 **_Date and Time_**: April 30th, 2024 / 11:30AM-12:00PM / 30 minutes
 
-**_Attendance_**: all present
+**_Attendance_**: All present
 
 **_Absent_**: n/a
 
@@ -64,7 +64,7 @@ https://trello.com/b/1mUNLyaH/stylesync-group-11-acit-2911-agile
 
 **_Date and time_**: May 1st, 2024 / 9:30 AM- 11:30PM / 120 minutes
 
-**_Attendance_**: all present
+**_Attendance_**: All present
 
 **_Absent_**: n/a
 
@@ -94,3 +94,24 @@ Worked on:
 - Meetup @ TechHub 11:30, 02 May 2024
 
 ---
+
+### Meeting 3
+
+**_Title of Meeting_**:  PowerPoint Meeting
+
+**_Purpose of meeting_**: Start on PPT
+
+**_Date and time_**: May 2nd, 2024 / 11:45 AM- 1:00 PM / 75 minutes
+
+**_Attendance_**: All present
+
+**_Absent_**: n/a
+
+**_Action items_**:
+- PowerPoint
+- Proposal Draft
+
+**_Next steps_**:
+- All team members: Weekly Peer Evaluation
+- Finish PowerPoint
+- Prepare Deliverables for Friday submission
