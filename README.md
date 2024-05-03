@@ -115,3 +115,65 @@ Worked on:
 - All team members: Weekly Peer Evaluation
 - Finish PowerPoint
 - Prepare Deliverables for Friday submission
+
+---
+
+### Meeting 4
+
+**_Title of Meeting_**:  Presentation to Class & Instructor
+
+**_Purpose of meeting_**: Group Presentation of Sprint #0 Deliverables
+
+**_Date and time_**: May 3nd, 2024 / 09:00 AM- 11:30 PM / 150 minutes
+
+**_Attendance_**: All present
+
+**_Absent_**: n/a
+
+**_Action items_**:
+- Group Presentation of Idea to Instructors and Receive Feedback
+- Administration Completion
+    - Proposal Draft (Completion)
+    - Team Charter (Completion)
+- Retrospective of Feedback
+
+
+Assigned Tasks:
+
+- Angad Bains
+    - Database Development
+        - Relational Algebra to demonstrate database (UML)
+        - Start Coding the database (SQLite and model.py)
+
+- Tanish Bansal (2B)
+    - Database Development
+        - Relational Algebra to demonstrate database (UML)
+        - Start Coding the database (SQLite and model.py)
+    - Middleware Development
+        - Work on Login Page and Registration Page (Design and HTML)
+
+- Matthew Chow (2B)
+    - UI Design (Drawing, Planning, Define Functionalities)
+        - Start Coding
+
+- Chae Won (Matilda) Kim (1B)
+    - Administrative Work
+        - Prepare Next Week's PPTX
+    - Middleware Development and Refinement
+        - Work on Login Page and Registration Page (Design and HTML)
+
+- Charley Liao (2B)
+    - Administrative Work
+        - Status Report
+    - Define Test Cases and Class Diagram for Test Case
+        - Establish a Demo File
+
+- Misha Makaroff (1B)
+    - UI Design (Drawing, Planning, Define Functionalities)
+        - Start Coding
+
+
+**_Next steps_**:
+- All team members: Weekly Peer Evaluation (Due same day, individual hand-in)
+- Roles are split, initiate/execute the work
+- Research and start working on "REACT" on Python
