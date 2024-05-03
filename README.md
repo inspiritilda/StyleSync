@@ -177,3 +177,6 @@ Assigned Tasks:
 - All team members: Weekly Peer Evaluation (Due same day, individual hand-in)
 - Roles are split, initiate/execute the work
 - Research and start working on "REACT" on Python
+
+---
+
