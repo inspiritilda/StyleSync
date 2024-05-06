@@ -28,4 +28,10 @@ class User(db.Model):
             "name": self.name
         }
 
+# Outfit Table
+class Outfit(db.Model):
+    id = mapped_column(Integer, primary_key=True)
+    user_id = mapped_column(Integer, ForeignKey('user.id'))
+    date = mapped_column(DATETIME, nullable=False)
+    rating = mapped_column(Integer, nullable=True)
 
