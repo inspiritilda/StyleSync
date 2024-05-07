@@ -22,7 +22,13 @@
                       <label class="form-label" for="form3Example1c">Your Name</label>
                     </div>
                   </div>
-
+                  {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    <div class="notification is-danger">
+                    {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+                    </div>
+                  {% endif %}
+                {% endwith %}
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">

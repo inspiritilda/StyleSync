@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template, request, Blueprint,redirect
+from flask import Flask, url_for, render_template, request, Blueprint, redirect, flash
 from db import db
 from models import User
 from pathlib import Path
@@ -12,9 +12,12 @@ auth_routes_bp = Blueprint("authorization", __name__)
 def home():
     return render_template("/auth/login.html")
 
+
 @auth_routes_bp.route("/auth/register")
 def register():
     return render_template("/auth/signup.html")
+
+
 @auth_routes_bp.route("/auth/register", methods=["POST"])
 def signup():
     email = request.form.get("email")
@@ -39,18 +42,19 @@ def signup():
     # add the new user to the database
     db.session.add(new_user)
     db.session.commit()
-    return redirect(url_for("authorization.home"))   
+    return redirect(url_for("authorization.home"))
+
+
 @auth_routes_bp.route("/auth/login", methods=["POST"])
 def login():
     email = request.form.get("email")
     password = request.form.get("password")
-    print(email)    
+    print(email)
     print(password)
     statement = db.select(User).where(User.email == email)
     user = db.session.execute(statement).scalar()
-    print(check_password_hash(user.password, password))
-    if not  check_password_hash(user.password, password):
+    if not user:
         return redirect(url_for("authorization.register"))
-    return "Logged in!"
-
-
+    if not check_password_hash(user.password, password):
+        return redirect(url_for("authorization.register"))
+    return redirect(url_for("html.home", id=user.id))
