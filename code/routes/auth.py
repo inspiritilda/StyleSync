@@ -1,7 +1,6 @@
-from flask import Flask, url_for, render_template, request, Blueprint, redirect, flash
+from flask import url_for, render_template, request, Blueprint, redirect, session
 from db import db
 from models import User
-from pathlib import Path
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -49,12 +48,12 @@ def signup():
 def login():
     email = request.form.get("email")
     password = request.form.get("password")
-    print(email)
-    print(password)
+    # print(email)
+    # print(password)
     statement = db.select(User).where(User.email == email)
     user = db.session.execute(statement).scalar()
     if not user:
         return redirect(url_for("authorization.register"))
     if not check_password_hash(user.password, password):
         return redirect(url_for("authorization.register"))
-    return redirect(url_for("html.home", id=user.id))
+    return redirect(url_for("html.homepage", id=user.id))
