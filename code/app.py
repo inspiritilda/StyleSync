@@ -5,10 +5,11 @@ from pathlib import Path
 from routes import auth_routes_bp, html_routes_bp
 from werkzeug.security import generate_password_hash, check_password_hash
 
-# from routes import finals_bp,api_customers_bp, api_products_bp, api_order_bp, htmls_bp
+# Initialize the Flask app
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 app.instance_path = Path("./data").resolve()
+
 # Initialize the database
 db.init_app(app)
 app.register_blueprint(auth_routes_bp, url_prefix="/")
