@@ -48,12 +48,14 @@ def signup():
 def login():
     email = request.form.get("email")
     password = request.form.get("password")
-    # print(email)
-    # print(password)
+    print(email)
+    print(password)
     statement = db.select(User).where(User.email == email)
     user = db.session.execute(statement).scalar()
     if not user:
+        print ("User not found")
         return redirect(url_for("authorization.register"))
     if not check_password_hash(user.password, password):
+        print("Password is incorrect")
         return redirect(url_for("authorization.register"))
     return redirect(url_for("html.homepage", id=user.id))
