@@ -7,6 +7,7 @@ html_routes_bp = Blueprint("html", __name__)
 @html_routes_bp.route("/home")
 @login_required
 def home():
+    print(current_user)
     return render_template("/html/base.html", user=current_user)
 
 @html_routes_bp.route("/homepage")
