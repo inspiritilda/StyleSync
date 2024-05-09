@@ -257,6 +257,7 @@
         justify-content: center;
         border: 2px solid black;
         padding-right: 100px;
+        
 
     }
     .top {
@@ -266,6 +267,7 @@
         align-items: center;
         justify-content: center;
         border: 2px solid black;
+        
     }
 
     .bottom {
@@ -340,13 +342,13 @@
 
     .wardrobe-container {
         display:grid;
-        grid-template-columns:200px 1fr;
-        grid-template-rows:80px auto;
+        grid-template-columns:400px 1fr;
+        grid-template-rows:80px 120px auto;
     }
 
     .wardrobe-menu {
         grid-column:1;
-        grid-row: 2;
+        grid-row: 3;
         display: block;
         align-items:start;
         justify-content: center;
@@ -355,28 +357,53 @@
     }
 
     .wardrobe-menu ul {
+        margin-top: 40px;
         list-style-type: none;
         margin-left:10px;
         text-align: start;
+        font-size: 27px;
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 200px);
-        grid-template-rows: 200px auto;
+        grid-template-rows: 200px;
+        grid-auto-rows: 200px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* grid-template-columns: repeat(4, 200px); */
+        /* grid-template-rows: 200px auto; */
         gap: 10px;
         grid-column: 2;
-        grid-row:2;
+        grid-row:3;
         border: solid 2px black;
         }
 
-    .titletest {
-        grid-column-start: 1;
+    .wardrobe-title {
+        grid-column-start: 2;
         grid-column-end: 3;
         grid-row:1;
         border: solid black 2px;
         text-align: center;
         justify-content: center;
+        object-fit: contain;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .wardrobe-button {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row:2;
+        border: solid black 2px;
+    }
+
+    .wardrobe-button img {
+        object-fit:contain;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin: auto;
     }
         
         .grid-item {
@@ -393,5 +420,22 @@
         object-fit: contain;
         }
 
+        .wardrobe-logo {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row:1;
+            border: solid black 2px;
+            text-align: center;
 
+        }
+
+        .wardrobe-weather {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row:2;
+            border: solid black 2px;
+            display: block;
+            margin:auto;
+
+        }
 }
