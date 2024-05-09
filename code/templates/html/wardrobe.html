@@ -1,23 +1,30 @@
 {% extends '/html/homepage.html' %}
 {% block content %}
-<div class="center">
-    <h1>
-        Wardrobe
-    </h1>
+
+<div class="wardrobe-container">
+    <div class="grid">
+        {% for x in image_urls %}
+        <div class="grid-item">
+            <img src="{{ x }}" alt="Image">
+        </div>
+        {% endfor %}
+    </div>
+    <div class="wardrobe-menu">
+        <h1>Categories</h1>
+        <ul>
+            <li>Shirts</li>
+            <li>Pants</li>
+            <li>Sweaters</li>
+            <li>Shoes</li>
+            <li>Jackets</li>
+            <li>Accessories</li>
+        </ul>
+    </div>
+    <div class="titletest">
+        <h1>StyleSync</h1>
+    </div>
+
 </div>
-<div class="oval-container">
-    <div class="oval">Shirts</div>
-    <div class="oval">Pants</div>
-    <div class="oval">Shoes</div>
-    <div class="oval">Hats</div>
-    <div class="oval">accessories</div>
-    <div class="oval">???</div>
-</div>
-<div class="container">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-</div>
+
 
 {% endblock %}
