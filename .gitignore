@@ -1,7 +1,11 @@
 .DS_Store
 *.docx
+<<<<<<< HEAD
 __pycache__
 *.pyc
 __init__.cpython-312.pyc
 data.db
 this is a test
+=======
+__pycache__
+>>>>>>> ef55525 (update .gitignore)
