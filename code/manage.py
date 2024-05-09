@@ -15,8 +15,6 @@ def drop_tables():
     with app.app_context():
         db.drop_all()
 
-ldlddl
-
 if __name__ == "__main__":
     drop_tables()
     create_tables()
