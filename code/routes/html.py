@@ -1,12 +1,13 @@
 from flask import Flask, url_for, render_template, request, Blueprint, redirect, session
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from flask_login import login_required,current_user
 
 html_routes_bp = Blueprint("html", __name__)
 
 @html_routes_bp.route("/home")
+@login_required
 def home():
-    return render_template("/html/index.html")
+    return render_template("/html/base.html", user=current_user)
 
 @html_routes_bp.route("/homepage")
 def homepage():
