@@ -136,6 +136,7 @@ Worked on:
     - Proposal Draft (Completion)
     - Team Charter (Completion)
 - Retrospective of Feedback
+    - Tanish Bansal Did not attend Retro
 
 
 Assigned Tasks:
@@ -180,3 +181,79 @@ Assigned Tasks:
 
 ---
 
+### Meeting 5
+
+**_Title of Meeting_**:  UI and Database Decision
+
+**_Purpose of meeting_**: UI Design and Database Design decision / update Meeting
+
+**_Date and time_**: May 6nd, 2024 / 11:30 AM- 12:00 PM / 30 minutes
+
+**_Attendance_**: Matilda Kim, Matthew Chow, Angad Bains, Charley Liao, Misha Makaroff
+
+**_Absent_**: Tanish Bansal
+
+**_Action Items_**:
+- Members presented their actions done over the weekend
+    - Presented Home Page Design (HTML)
+    - Presented Login (HTML) and Registration (HTML)
+    - Presented ERD to identify what is missing for the Database
+        - Decision on the relationship for database
+
+**_Next Steps_**:
+- Continue with existing tasks and adjust with feedback from group meeting
+
+---
+
+### Meeting 6
+
+**_Title of Meeting_**:  Implementation of Workflow (Using GitHub)
+
+**_Purpose of meeting_**: Group to utilize a workflow
+
+**_Date and time_**: May 7nd, 2024 / 11:30 AM- 01:00 PM / 90 minutes
+
+**_Attendance_**: All present
+
+**_Absent_**: n/a
+
+**_Action items_**:
+- Workflow implementation, utilizing branching on GitHub
+
+**_Next Steps_**:
+- Continue with existing tasks and adjust with feedback accordingly
+- Practice and read up on GitHub branches, merges, and workflow
+
+---
+
+### Meeting 7
+
+**_Title of Meeting_**:  Implementation of Workflow (Using GitHub)
+
+**_Purpose of meeting_**: Group to utilize a workflow
+
+**_Date and time_**: May 8nd, 2024 / 08:30 AM- 11:30 PM / 180 minutes
+
+**_Attendance_**: Matilda Kim, Matthew Chow, Angad Bains, Charley Liao, Misha Makaroff
+
+**_Absent_**: Tanish Bansal (2 hours late for meeting)
+
+**_Action Items_**:
+- Members presented their actions done
+    - Presented revised Home Page Design (HTML)
+    - Presented revised Login (HTML) and Registration (HTML)
+    - Presented revised ERD
+- Input Database into Python Flask and SQLAlchemy
+    - Create database for use with HTML pages (data folder with data.db)
+- Sync up the Login-page with database
+- Administrative work:
+    - Revisit Sprint Planning of the Proposal
+    - Review Deliverables and Timeline
+    - Status Update for Sprint #1
+
+**_Next Steps_**:
+- Administrative Work:
+    - Create Tree Diagram demonstrating Workflow branches
+    - PowerPoint Presentation of Sprint #1
+
+---
