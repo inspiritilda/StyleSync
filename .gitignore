@@ -1,5 +1,13 @@
 .DS_Store
 *.docx
+<<<<<<< HEAD
 __pycache__
 *.pyc
 data.db
+<<<<<<< HEAD
+=======
+this is a test
+=======
+__pycache__
+>>>>>>> ef55525 (update .gitignore)
+>>>>>>> 9527904 (update .gitignore)
