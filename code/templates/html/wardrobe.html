@@ -1,0 +1,40 @@
+{% extends '/html/homepage.html' %}
+{% block content %}
+
+<div class="wardrobe-container">
+    <div class="grid">
+        {% for x in image_urls %}
+        <div class="grid-item">
+            <img src="{{ x }}" alt="Image">
+        </div>
+        {% endfor %}
+    </div>
+    <div class="wardrobe-menu">
+        <h1>Categories</h1>
+        <ul>
+            <li>Shirts</li>
+            <li>Pants</li>
+            <li>Sweaters</li>
+            <li>Shoes</li>
+            <li>Jackets</li>
+            <li>Accessories</li>
+        </ul>
+    </div>
+    <div class="wardrobe-title">
+        <h1>Wardrobe</h1>
+    </div>
+    <div class="wardrobe-button">
+        <img src="{{ url_for('static', filename='/Assets/newbutton.png') }}" alt="newbutton">
+    </div>
+    <div class="wardrobe-logo">
+        <h1>StyleSync</h1>
+
+    </div>
+    <div class="wardrobe-weather">
+        <img src="{{ url_for('static', filename='/Assets/weatherwidget3.png') }}" alt="newbutton">
+    </div>
+
+</div>
+
+
+{% endblock %}

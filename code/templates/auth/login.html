@@ -1,0 +1,11 @@
+{% extends '/auth/base.html' %} {% block content %}
+<div class="container">
+    <h1 style="font-family: 'Montserrat', sans-serif"><span style="font-weight: bold">StyleSync Login</span></h1>
+    <form method="post" action="/auth/login">
+        <input type="email" name="email" placeholder="Username (e-mail)" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <input type="submit", value="Login" />
+    </form>
+    <div class="footer">Don't have an account? <a href="/auth/register">Sign Up</a></div>
+</div>
+{% endblock %}
