@@ -80,8 +80,8 @@ def seed():
 
 
 if __name__ == "__main__":
-    # drop_tables()
-    # create_tables()
+    drop_tables()
+    create_tables()
     seed()
 with app.app_context():
     print(db.session.query(Items).filter_by(id=2).first().tags)
