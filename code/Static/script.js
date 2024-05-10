@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       function swapImage() {
         if (isImageSwapped) {
-          icon.src = 'Assets/arrow.png';
+          icon.src = "{{ url_for('static', filename='/Assets/arrow.png') }}";
         } else {
-          icon.src = 'Assets/arrowdown.png';
+          icon.src = "{{ url_for('static', filename='/Assets/arrowdown.png') }}";
         }
         isImageSwapped = !isImageSwapped;
       }

@@ -72,7 +72,7 @@
 
     .grid-container {
         display:grid;
-        grid-template-columns: 30% 65%;
+        grid-template-columns: 350px 65%;
         grid-template-rows: 50px 30px 80px 80px auto;
         column-gap:20px;
         row-gap:20px;
@@ -96,6 +96,7 @@
         justify-content: center;
         align-items: center;
         border: solid black 2px;
+        margin:auto;
     }
 
     .logo p {
@@ -167,7 +168,7 @@
     .clothing {
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: 1;
+        grid-row-start: 2;
         grid-row-end: 5;
         display: grid;
         grid-template-columns: 100%;
@@ -342,7 +343,7 @@
 
     .wardrobe-container {
         display:grid;
-        grid-template-columns:400px 1fr;
+        grid-template-columns:350px 1fr;
         grid-template-rows:80px 120px auto;
     }
 
