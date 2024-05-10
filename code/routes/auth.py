@@ -1,4 +1,4 @@
-from flask import url_for, render_template, request, Blueprint, redirect, session
+from flask import url_for, render_template, request, Blueprint, redirect, session, flash
 from db import db
 from models import User
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -68,6 +68,7 @@ def login_post():
     statement = db.select(User).where(User.email == email)
     user = db.session.execute(statement).scalar()
     if not user or not check_password_hash(user.password, password):
+        flash('Email or Password is incorrect')
         return redirect(url_for("authorization.home"))
     login_user(user, remember=remember)
     return redirect(url_for("html.home"))
