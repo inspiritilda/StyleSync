@@ -1,6 +1,80 @@
 {% extends '/html/homepage.html' %}
 {% block content %}
-    <div class="outfits">
+<!-- <script src="{{ url_for('static', filename='/script.js') }}"></script> -->
+<!-- Alot of this is hard coded, later on with the database, there will be a for loop -->
+<div class="card-group">
+    <div class="col">
+      <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <img src="{{ url_for('static', filename='/pics/hatghost.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <img src="{{ url_for('static', filename='/pics/hatghost.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <img src="{{ url_for('static', filename='/pics/hatghost.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <img src="{{ url_for('static', filename='/pics/hatghost.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Picture</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <!-- This is hardcoded in, Later on with the database in, change it out into a for loop -->
+        <img src="{{ url_for('static', filename='/pics/hoodie.jpg') }}" class="card" alt="Picture 1">
+        <img src="{{ url_for('static', filename='/pics/jeans.jpg') }}" class="card" alt="Picture 2">
+        <img src="{{ url_for('static', filename='/pics/hoodie.jpg') }}" class="card" alt="Picture 1">
+        <img src="{{ url_for('static', filename='/pics/jeans.jpg') }}" class="card" alt="Picture 2">
+    </div>
+    <div class="offcanvas-footer">
+        <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+        <button type="button" class="btn btn-secondary" id="discardButton">Discard</button>
+      </div>
+  </div>
+  <script>
+    $(".offcanvas-image").click(function() {
+    $(".offcanvas-image").removeClass("selected"); // Remove the selected class from all images
+    $(this).addClass("selected"); // Add the selected class to the clicked image
+  });
+
+  $("#saveButton").click(function() {
+    var imageUrl = $(".offcanvas-image.selected").attr("src");
+    $("#selectedImage").attr("src", imageUrl);
+    $("#offcanvasBottom").offcanvas('hide'); // Hide the offcanvas after saving the picture
+  });
+
+  $("#discardButton").click(function() {
+    $(".offcanvas-image").removeClass("selected"); // Remove the selected class from all images
+  });
+  </script>
+<!-- <div class="outfits">
         <div class="welcome">
             <p>Good Morning Misha</p>
         </div>
@@ -51,6 +125,5 @@
     <div class="footer">
         <p>All rights reserved</p>
     </div>
-  </div> 
-
+  </div>  -->
 {% endblock %}  

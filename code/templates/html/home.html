@@ -1,7 +1,8 @@
 {% extends '/html/homepage.html' %}
 {% block content %}
 <body>
-      <script src="/code/static/script.js"></script>
+      <!-- <script src="/code/Static/script.js"></script> -->
+      <script src="{{ url_for('static', filename='/script.js') }}"></script>
       <div class="grid-container">
         <div class="logo">
             <p>stylesync</p>
@@ -16,7 +17,7 @@
         <div class="menu">
             <div class="menu-item">
                 <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
-                Menu Item 1
+                Work
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
                   <li><a href="home.html">Outfit2</a></li>
@@ -25,7 +26,7 @@
               </div>
               <div class="menu-item">
                 <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
-                Menu Item 2
+                Beach
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
                   <li><a href="home.html">Outfit2</a></li>
@@ -34,7 +35,7 @@
               </div>
               <div class="menu-item">
                 <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
-                Menu Item 3
+                Club
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
                   <li><a href="home.html">Outfit2</a></li>
@@ -45,7 +46,7 @@
         </div>
         <div class="outfits">
             <div class="welcome">
-                <p>Good Morning Misha</p>
+                <p>Good Morning Misha!</p>
             </div>
             <div class="accessories">
                 <div class="hat">
