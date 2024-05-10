@@ -8,7 +8,7 @@ class User(UserMixin,db.Model):
     name = mapped_column(String(200), nullable=False)
     email = mapped_column(String(200), nullable=False, unique=True)
     password = mapped_column(String(200), nullable=False)
-    items = relationship('Items')
+    items = relationship('Items', back_populates='user')
 
 class Items(db.Model):
     id = mapped_column(Integer, primary_key=True)
@@ -43,8 +43,8 @@ class OutfitItems(db.Model):
     id = mapped_column(Integer, primary_key=True)
     outfit_id = mapped_column(Integer, ForeignKey(Outfit.id), nullable=False)
     item_id = mapped_column(Integer, ForeignKey(Items.id), nullable=False)
-    outfit = relationship('Outfit')
-    item = relationship('Items')
+    outfit = relationship('Outfit', back_populates='outfit_items')
+    item = relationship('Items', back_populates='outfit_items')
 
 # class Image(db.Model):
 #     id = mapped_column(Integer, primary_key=True)
