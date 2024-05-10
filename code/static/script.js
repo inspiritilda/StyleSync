@@ -42,10 +42,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // this is broken and not work
-    const pictures = document.querySelectorAll(".picture");
+    const pictures = document.querySelectorAll(".card");
     pictures.forEach((picture) => {
     picture.addEventListener("click", function() {
-        console.log("s");
+        // console.log("s");
+        pictures.forEach(p => {
+          p.classList.remove("highlight");
+      });
+      
+      // Add highlight class to the clicked picture
+      this.classList.add("highlight");
         console.log(this)
         // Replace image in the clicked card with the selected picture from the canvas
         const canvasImage = this.querySelector("img");
