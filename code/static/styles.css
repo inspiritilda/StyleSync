@@ -37,7 +37,6 @@
         grid-column-end: 2;
         grid-row-start: 5;
         grid-row-end: auto;
-        border: solid black 2px;
         text-align: center;
         font-size: 25px;
 
@@ -95,12 +94,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: solid black 2px;
         margin:auto;
     }
 
     .logo p {
-        border: solid black 2px;
         margin: 0;    
         font-size: 70px;
         color: #3562BD;
@@ -124,7 +121,6 @@
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-end: 5;
-        border: solid black 2px;
         justify-content: center;
         display:flex;
     }
@@ -148,7 +144,6 @@
         grid-template-rows: auto;
         column-gap:0px;
         row-gap:0px;
-        border: solid black 2px;
     }
 
     .accessories {
@@ -199,7 +194,6 @@
         grid-column-end: 5;
         grid-row-start: 6;
         grid-row-end: 7;
-        border: solid black 2px;
         text-align: center;
     }
 
@@ -209,7 +203,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .necklace {
@@ -218,7 +211,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .jewelry1 {
@@ -227,7 +219,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .jewelry2 {
@@ -236,7 +227,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
+
     }
 
     .jewelry3 {
@@ -245,7 +236,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .welcome {
@@ -256,7 +246,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
         padding-right: 100px;
         
 
@@ -267,7 +256,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
+
         
     }
 
@@ -277,7 +266,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .shoes {
@@ -286,7 +274,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
 
@@ -296,7 +283,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .jacket {
@@ -305,7 +291,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
     }
 
     .clothing img {
@@ -332,7 +317,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
         height: 100px;
     }
 
@@ -344,7 +328,7 @@
     .wardrobe-container {
         display:grid;
         grid-template-columns:350px 1fr;
-        grid-template-rows:80px 120px auto;
+        grid-template-rows:120px 120px auto;
     }
 
     .wardrobe-menu {
@@ -353,7 +337,6 @@
         display: block;
         align-items:start;
         justify-content: center;
-        border: solid black 2px;
         text-align: center;
     }
 
@@ -375,14 +358,13 @@
         gap: 10px;
         grid-column: 2;
         grid-row:3;
-        border: solid 2px black;
+        margin-top:-40px;
         }
 
     .wardrobe-title {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row:1;
-        border: solid black 2px;
         text-align: center;
         justify-content: center;
         object-fit: contain;
@@ -394,13 +376,12 @@
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row:2;
-        border: solid black 2px;
     }
 
     .wardrobe-button img {
         object-fit:contain;
-        width: 50%;
-        height: 50%;
+        width: 30%;
+        height: 30%;
         text-align: center;
         justify-content: center;
         display: block;
@@ -412,7 +393,6 @@
         height: 200px;
         margin: 0;
         padding: 0;
-        border: 2px solid black;
         }
         
         .grid-item img {
@@ -425,8 +405,11 @@
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row:1;
-            border: solid black 2px;
             text-align: center;
+            margin: 0;    
+            font-size: 70px;
+            color: #3562BD;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         }
 
@@ -434,7 +417,6 @@
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row:2;
-            border: solid black 2px;
             display: block;
             margin:auto;
 
