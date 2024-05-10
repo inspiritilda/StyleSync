@@ -19,5 +19,7 @@ def newoutfit():
     return render_template("/html/newoutfit.html")
 
 @html_routes_bp.route("/wardrobe")
+@login_required
 def wardrobe():
-    return render_template("/html/wardrobe.html")
+
+    return render_template("/html/wardrobe.html", user = current_user)
