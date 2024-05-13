@@ -7,7 +7,7 @@ from models import User
 
 # Initialize the Flask app
 app = Flask(__name__)
-app.secret_key = "supersecret"
+app.config["SECRET_KEY"]= "supersecret"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 app.instance_path = Path("./data").resolve()
 

@@ -1,4 +1,198 @@
 {% extends '/html/homepage.html' %}
 {% block content %}
-<p>testing</p>
-{% endblock %}
+<script src="{{ url_for('static', filename='/script.js') }}"></script>
+<!-- Alot of this is hard coded, later on with the database, there will be a for loop -->
+<div class="grid-container">
+    <div class="logo">
+        <p>stylesync</p>
+    </div>
+    <div class="weather">
+        <img src="{{ url_for('static', filename='/pics/weatherwidget3.png') }}" alt="weather">
+        <!-- <img src="/code/Assets/weatherwidget3.png" alt="weather"> -->
+    </div>
+    <div class="menutitle">
+        <p>Saved Outfits</p>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
+            Work
+            <ul class="sub-menu">
+              <li><a href="home.html">Outfit1</a></li>
+              <li><a href="home.html">Outfit2</a></li>
+              <li><a href="home.html">Outfit3</a></li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
+            Beach
+            <ul class="sub-menu">
+              <li><a href="home.html">Outfit1</a></li>
+              <li><a href="home.html">Outfit2</a></li>
+              <li><a href="home.html">Outfit3</a></li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
+            Club
+            <ul class="sub-menu">
+              <li><a href="home.html">Outfit1</a></li>
+              <li><a href="home.html">Outfit2</a></li>
+              <li><a href="home.html">Outfit3</a></li>
+            </ul>
+            
+          </div>
+          <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+    </div>
+    
+    <div class="card-group">
+        <div class="col">
+        <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Hat</h5>
+            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Shirt</h5>
+            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Pant</h5>
+            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> -->
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Shoes</h5>
+            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Upperware</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Accessories</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Accessories</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <img class="card-img-top" src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Accessories</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Picture</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <!-- This is hardcoded in, Later on with the database in, change it out into a for loop -->
+        {% for x in image_urls %}
+        <div class="card">
+            <img class="card-img-top" src="{{ x }}" alt="Image">
+        </div>
+        {% endfor %}
+    </div>
+    <div class="offcanvas-footer">
+        <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+        <button type="button" class="btn btn-secondary" id="discardButton">Discard</button>
+      </div>
+  </div>
+
+
+  
+
+<!-- <div class="outfits">
+        <div class="welcome">
+            <p>Good Morning Misha</p>
+        </div>
+        <div class="accessories">
+            <div class="hat">
+                <img src="{{ url_for('static', filename='/Assets/hatghost.png') }}" alt="hat">
+            </div>
+            <div class="necklace">
+                <img src="{{ url_for('static', filename='/Assets/necklaceghost.png') }}" alt="necklace">
+            </div>
+            <div class="jewelry1">
+                <img src="{{ url_for('static', filename='/Assets/watch.jpg') }}" alt="jewelry1">
+            </div>
+            <div class="jewelry2">
+                <img src="{{ url_for('static', filename='/Assets/onering.png') }}" alt="jewelry2">
+            </div>
+            <div class="jewelry3">
+                <img src="{{ url_for('static', filename='/Assets/onering.png') }}" alt="jewelry2">
+            </div>
+
+        </div>
+        <div class="clothing">
+            <div class="top">
+                <img src="{{ url_for('static', filename='/Assets/shirt.jpg') }}" alt="top">
+            </div>
+            <div class="bottom">
+                <img src="{{ url_for('static', filename='/Assets/jeansghost.png') }}" alt="bottom">
+            </div>
+            <div class="shoes">
+                <img src="{{ url_for('static', filename='/Assets/shoesghost.png') }}" alt="shoes">
+            </div>
+            <div class="outfitnav">
+                <img src="{{ url_for('static', filename='/Assets/arrowleft.png') }}" alt="previousoutfit">
+                <img src="{{ url_for('static', filename='/Assets/arrowright.png') }}" alt="nextoutfit">
+                
+            </div>
+        </div>
+        <div class="jackets">
+            <div class="sweater">
+                <img src="{{ url_for('static', filename='/Assets/hoodie.jpg') }}" alt="sweater">
+            </div>
+            <div class="jacket">
+                <img src="{{ url_for('static', filename='/Assets/jacketghost.png') }}" alt="jacket">
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>All rights reserved</p>
+    </div>
+  </div>  -->
+{% endblock %}  

@@ -4,7 +4,6 @@ from models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, login_required, logout_user
 
-
 auth_routes_bp = Blueprint("authorization", __name__)
 
 
@@ -42,6 +41,9 @@ def signup():
     # add the new user to the database
     db.session.add(new_user)
     db.session.commit()
+    if new_user:
+        flash("Email already exists")
+        return redirect(url_for("authorization.register"))
     return redirect(url_for("authorization.home"))
 
 
