@@ -1,6 +1,7 @@
 from sqlalchemy import Boolean, Float, Numeric, ForeignKey, Integer, String, DECIMAL, DateTime, DATETIME
 from sqlalchemy.orm import mapped_column, relationship
 from db import db
+from werkzeug.security import generate_password_hash, check_password_hash
 
 class User(db.Model):
     id = mapped_column(Integer, primary_key=True)
@@ -14,6 +15,10 @@ class User(db.Model):
             "id": self.id,
             "name": self.name
         }
+    
+    def password_hash(self):
+        return generate_password_hash(self.password)
+
 
 class Image(db.Model):
     id = mapped_column(Integer, primary_key=True)

@@ -6,16 +6,15 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 
 # Initialize the Flask app
-def create_app():
-    app = Flask(__name__)
-    app.config["SECRET_KEY"]= "supersecret"
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
-    app.instance_path = Path("./data").resolve()
+app = Flask(__name__)
+app.config["SECRET_KEY"]= "supersecret"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
+app.instance_path = Path("./data").resolve()
 
-    db.init_app(app)
-    app.register_blueprint(auth_routes_bp, url_prefix="/")
-    app.register_blueprint(html_routes_bp, url_prefix="/views")
-    return app
+db.init_app(app)
+app.register_blueprint(auth_routes_bp, url_prefix="/")
+app.register_blueprint(html_routes_bp, url_prefix="/views")
+
 
 
 # # Initialize the database
@@ -25,5 +24,4 @@ def create_app():
 
 
 if __name__ == "__main__":
-    app = create_app()
     app.run(debug=True, port=8888)
