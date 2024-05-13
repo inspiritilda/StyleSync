@@ -1,5 +1,6 @@
 {% extends '/html/base.html' %}
 {% block content %}
+<<<<<<< HEAD
 <body>
       <script src="/code/Static/script.js"></script>
       <script src="{{ url_for('static', filename='/script.js') }}"></script>
@@ -18,6 +19,26 @@
             <div class="menu-item">
                 <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
                 Work
+=======
+<!-- <body> -->
+      <!-- <script src="/code/static/script.js"></script> -->
+      <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+      <!-- <div class="grid-container"> -->
+        <!-- <div class="logo"> -->
+            <!-- <p>stylesync</p> -->
+        <!-- </div> -->
+        <!-- <div class="weather"> -->
+            <!-- <img src="{{ url_for('static', filename='/Assets/weatherwidget3.png') }}" alt="weather"> --->
+            <!-- <img src="/code/Assets/weatherwidget3.png" alt="weather"> -->
+        <!-- </div> -->
+        <!-- <div class="menutitle"> --> 
+            <!-- <p>Saved Outfits</p> -->
+        <!-- </div> -->
+        <!-- <div class="menu"> -->
+            <!-- <div class="menu-item">
+                <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
+                Menu Item 1
+>>>>>>> 2308e9d (still making them work . just commited to save work)
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
                   <li><a href="home.html">Outfit2</a></li>
@@ -25,10 +46,17 @@
                 </ul>
               </div>
               <div class="menu-item">
+<<<<<<< HEAD
                 <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
                 Beach
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
+=======
+                <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
+                Menu Item 2
+                <ul class="sub-menu"> -->
+                  <!-- <li><a href="home.html">Outfit1</a></li>
+>>>>>>> 2308e9d (still making them work . just commited to save work)
                   <li><a href="home.html">Outfit2</a></li>
                   <li><a href="home.html">Outfit3</a></li>
                 </ul>
@@ -46,8 +74,13 @@
         </div>
         <div class="outfits">
             <div class="welcome">
+<<<<<<< HEAD
                 <p>Good Morning Misha!</p>
             </div>
+=======
+                <p>Good Morning Misha</p> -->
+            <!-- </div>
+>>>>>>> 2308e9d (still making them work . just commited to save work)
             <div class="accessories">
                 <div class="hat">
                     <img src="{{ url_for('static', filename='/pics/hatghost.png') }}" alt="hat">
@@ -65,8 +98,8 @@
                     <img src="{{ url_for('static', filename='/pics/onering.png') }}" alt="jewelry2">
                 </div>
 
-            </div>
-            <div class="clothing">
+            </div> -->
+            <!-- <div class="clothing">
                 <div class="top">
                     <img src="{{ url_for('static', filename='/pics/shirt.jpg') }}" alt="top">
                 </div>
@@ -84,10 +117,17 @@
             </div>
             <div class="jackets">
                 <div class="sweater">
+<<<<<<< HEAD
                     <img src="{{ url_for('static', filename='/pics/hoodie.jpg') }}" alt="sweater">
                 </div>
                 <div class="jacket">
                     <img src="{{ url_for('static', filename='/pics/jacketghost.png') }}" alt="jacket">
+=======
+                    <img src="{{ url_for('static', filename='/Assets/hoodie.jpg') }}" alt="sweater">
+                </div> -->
+                <!-- <div class="jacket">
+                    <img src="{{ url_for('static', filename='/Assets/jacketghost.png') }}" alt="jacket">
+>>>>>>> 2308e9d (still making them work . just commited to save work)
                 </div>
             </div>
             
@@ -96,6 +136,19 @@
             <p>All rights reserved</p>
         </div>
       </div> 
+<<<<<<< HEAD
+=======
+    </body> -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>My Outfits</h1>
+            </div>
+            <div class="col">
+                <a href="{{url_for('html.newoutfit')}}" class="btn btn-primary">New Outfit</a>
+            </div>
+        </div>
+>>>>>>> 2308e9d (still making them work . just commited to save work)
 {% endblock %}
    
 
