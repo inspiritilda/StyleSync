@@ -1,14 +1,13 @@
-{% extends '/html/homepage.html' %}
+{% extends '/html/base.html' %}
 {% block content %}
 <body>
-      <!-- <script src="/code/Static/script.js"></script> -->
-      <!-- <script src="{{ url_for('static', filename='/script.js') }}"></script> -->
+      <script src="/code/static/script.js"></script>
       <div class="grid-container">
         <div class="logo">
             <p>stylesync</p>
         </div>
         <div class="weather">
-            <img src="{{ url_for('static', filename='/pics/weatherwidget3.png') }}" alt="weather">
+            <img src="{{ url_for('static', filename='/Assets/weatherwidget3.png') }}" alt="weather">
             <!-- <img src="/code/Assets/weatherwidget3.png" alt="weather"> -->
         </div>
         <div class="menutitle">
@@ -16,8 +15,9 @@
         </div>
         <div class="menu">
             <div class="menu-item">
-                <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
-                Work
+                <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
+                Menu Item 1
+>>>>>>> 2308e9d (still making them work . just commited to save work)
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
                   <li><a href="home.html">Outfit2</a></li>
@@ -25,8 +25,8 @@
                 </ul>
               </div>
               <div class="menu-item">
-                <img class="menu-icon" src="{{ url_for('static', filename='/pics/arrow.png') }}" alt="Image">
-                Beach
+                <img class="menu-icon" src="{{ url_for('static', filename='/Assets/arrow.png') }}" alt="Image">
+                Menu Item 2
                 <ul class="sub-menu">
                   <li><a href="home.html">Outfit1</a></li>
                   <li><a href="home.html">Outfit2</a></li>
@@ -46,7 +46,7 @@
         </div>
         <div class="outfits">
             <div class="welcome">
-                <p>Good Morning Misha!</p>
+                <p>Good Morning Misha</p>
             </div>
             <div class="accessories">
                 <div class="hat">
@@ -65,8 +65,8 @@
                     <img src="{{ url_for('static', filename='/pics/onering.png') }}" alt="jewelry2">
                 </div>
 
-            </div>
-            <div class="clothing">
+            </div> -->
+            <!-- <div class="clothing">
                 <div class="top">
                     <img src="{{ url_for('static', filename='/pics/shirt.jpg') }}" alt="top">
                 </div>
@@ -84,10 +84,10 @@
             </div>
             <div class="jackets">
                 <div class="sweater">
-                    <img src="{{ url_for('static', filename='/pics/hoodie.jpg') }}" alt="sweater">
+                    <img src="{{ url_for('static', filename='/Assets/hoodie.jpg') }}" alt="sweater">
                 </div>
                 <div class="jacket">
-                    <img src="{{ url_for('static', filename='/pics/jacketghost.png') }}" alt="jacket">
+                    <img src="{{ url_for('static', filename='/Assets/jacketghost.png') }}" alt="jacket">
                 </div>
             </div>
             
@@ -96,6 +96,7 @@
             <p>All rights reserved</p>
         </div>
       </div> 
+    </body>
 {% endblock %}
    
 
