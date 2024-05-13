@@ -16,7 +16,7 @@ class Items(db.Model):
     image_url = mapped_column(String(200), nullable=False)
     user_id = mapped_column(Integer, ForeignKey(User.id), nullable=False)
     user = relationship('User', back_populates='items')
-    tags = relationship('Tags')
+    item_tags = relationship('Tags')
     outfit_items = relationship('OutfitItems')
 
 
@@ -30,7 +30,7 @@ class Tags(db.Model):
     id = mapped_column(Integer, primary_key=True)
     item_id = mapped_column(Integer, ForeignKey(Items.id), nullable=False)
     category_id = mapped_column(Integer, ForeignKey(Categories.id), nullable=False)
-    item = relationship('Items', back_populates='tags')
+    item = relationship('Items', back_populates='item_tags')
     category = relationship('Categories')
 class Outfit(db.Model):
     id = mapped_column(Integer, primary_key=True)
